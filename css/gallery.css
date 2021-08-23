@@ -1,0 +1,78 @@
+/*setting initial body margin and padding to 0 */
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    font-size: 3em;
+    margin: 0;
+    margin-bottom: 2em;
+}
+/* Adding hover effects  **/
+img:hover{
+    width:  20em;
+    height:  20em;
+}
+/* Grid definition */
+.container{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 20em;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: 25em;
+}
+.grid-container > div{
+    background: #ff5591;
+    padding: 1em;
+}
+.grid-container > div:nth-child(odd){
+    background: #59ddfe;
+}
+.grid-item{
+    position: relative;
+}
+
+/* combining a few rows to get the desired allignment */
+.item-4{
+    grid-row: 2;
+    grid-column: 1/3;
+    width: 71%;
+    
+}
+.item-5{
+    grid-row: 2;
+    grid-column: 2/4;
+    margin-left: 25.5%;
+}
+.item-6{
+    grid-row: 3;
+    grid-column: 1/4;
+}
+
+/* Positioning the image to the centre of the division */
+img{
+    max-height: 80%;  
+    max-width: 80%; 
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+
+/* Mobile allignment */
+@media(max-width: 850px){
+    .grid-container{
+        display: block;
+    }
+    
+}
