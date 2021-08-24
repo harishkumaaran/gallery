@@ -1,4 +1,4 @@
-# Dropdown Component using css
+# Gallery Component using css
 This is a Gallery component created using vanilla css. A simple example of the usage of Grid-systems.
 
 [**click here to view the component**](https://harishkumaaran.github.io/gallery/)
